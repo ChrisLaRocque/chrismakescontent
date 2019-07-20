@@ -1,0 +1,33 @@
+.song-text {
+  padding: 0 2vh; 
+}
+audio {
+  width: 100%;
+}
+/* div#song-list {
+  max-height: 42.2vh;
+  overflow: scroll;
+} */
+table {
+  background-color: black;
+}
+/* tr {
+  padding: 0 100vh;
+} */
+th {
+  font-weight: 800;
+  font-family: 'Source Sans Pro', Sans-Serif;
+}
+td, th {
+  color: white;
+}
+tbody > tr:hover {
+  cursor: pointer;
+  transform:scale(1.01);
+  transform-origin:center;
+  transition: transform .15s;
+}
+@media only screen and (max-width: 600px) {
+  
+} 
+
