@@ -1,0 +1,25 @@
+<section>
+  <div class="container" id="song-list">
+
+    <featured-item v-for="item in featuredSongs" v-bind:song="item"></featured-item>
+
+    <div class="row" >
+      <div class="col-12">  
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center"><i class="fa fa-play"></i></th>
+              <th scope="col">ARTIST</th>
+              <th scope="col">SONG</th>
+              <th scope="col">SERVICES</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr is="song-item" v-for="item in songs" v-bind:song="item"></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+</section>

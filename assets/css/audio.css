@@ -5,15 +5,12 @@ audio {
   width: 100%;
 }
 /* div#song-list {
-  max-height: 42.2vh;
+  max-height: 50vh;
   overflow: scroll;
 } */
 table {
   background-color: black;
 }
-/* tr {
-  padding: 0 100vh;
-} */
 th {
   font-weight: 800;
   font-family: 'Source Sans Pro', Sans-Serif;
@@ -21,13 +18,28 @@ th {
 td, th {
   color: white;
 }
+.table td, .table th {
+    vertical-align: middle;
+}
+.table-thumb {
+    height: 5vh;
+  }
 tbody > tr:hover {
   cursor: pointer;
   transform:scale(1.01);
   transform-origin:center;
   transition: transform .15s;
 }
+
 @media only screen and (max-width: 600px) {
-  
+  .song-text {
+  padding: 0; 
+  }
+  table {
+    font-size: 1.5vh;
+  }
+  .song-title {
+    margin: 2vh 0;
+  }
 } 
 

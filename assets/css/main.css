@@ -1,3 +1,4 @@
+/* Global Overrides */
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,13 @@ h1 {
 }
 h1, h2 {
   font-weight: 700;
+}
+section {
+  padding: 0 2vh;
+  margin: 2vh 0;
+}
+span {
+  font-family: inherit;
 }
 a {
   color: inherit;
@@ -51,7 +59,7 @@ button.dark:hover {
   background-color: black;
 }
 
-/* BS Class Overrides */
+/* BS4 Class Overrides */
 .col-12 {
   padding: 0;
 }
@@ -75,16 +83,13 @@ nav > a:hover {
   opacity: .5;
 }
 
-/* Sections */
-section {
-  padding: 0 3vh;
-  margin: 2vh 0;
-}
-
 /* Main Section */
 .blurb {
   margin-top: auto;
   margin-bottom: auto;
+}
+.button-container > .row > .col-12 > a > button {
+  width: 75%;
 }
 
 /* Footer */
@@ -118,5 +123,8 @@ section {
   }
   .icon-bar-footer > a > i {
     padding: 1vh;
+  }
+  .button-container > .row > .col-12 > a > button {
+    width: 100%;
   }
 } 

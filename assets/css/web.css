@@ -1,12 +1,15 @@
-/* Spartan */
 a > h2:hover {
   color: black;
   opacity: .5;
 }
+
+/* Desktop screenshots */
 .screens {
   overflow: hidden;
   max-height: 45vh;
 }
+
+/* Desktop screens overlay */
 .overlay {
   z-index: 1;
   position: absolute;
@@ -25,7 +28,14 @@ a > h2:hover {
 .overlay > .row > .col-6 > h3 {
   font-size: 4vh;
 }
-@media only screen and (max-width: 600px) {
 
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  section.mobile {
+    background-position: top;
+    background-size: 75%;
+    margin-bottom: 2vh;
+    min-height: 30vh;
+    color: white;
+  }
 }
-} 
