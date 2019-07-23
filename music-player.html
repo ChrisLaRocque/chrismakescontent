@@ -1,9 +1,9 @@
 <section>
   <div class="container" id="song-list">
 
-    <featured-item v-for="item in featuredSongs" v-bind:song="item"></featured-item>
+    <div class="row mb-2" id="featured-song"></div>
 
-    <div class="row" >
+    <div class="row">
       <div class="col-12">  
         <table class="table">
           <thead>
@@ -14,8 +14,7 @@
               <th scope="col">SERVICES</th>
             </tr>
           </thead>
-          <tbody>
-            <tr is="song-item" v-for="item in songs" v-bind:song="item"></tr>
+          <tbody id="table">
           </tbody>
         </table>
       </div>
