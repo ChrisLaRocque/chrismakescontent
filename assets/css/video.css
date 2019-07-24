@@ -1,0 +1,12 @@
+.video-list {
+  overflow-y: scroll;
+}
+/* #flexible {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+#popup {
+  display: flex;
+  flex: 0 1 auto;
+} */
