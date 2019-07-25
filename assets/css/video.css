@@ -1,12 +1,6 @@
-.video-list {
-  overflow-y: scroll;
+.video-item, .featured-video, .video-list {
+  border: 1px solid red;
 }
-/* #flexible {
-  display: flex;
-  flex: 1 0 auto;
+.video-thumb {
+  padding: 0;
 }
-
-#popup {
-  display: flex;
-  flex: 0 1 auto;
-} */

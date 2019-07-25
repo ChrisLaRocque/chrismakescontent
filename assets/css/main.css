@@ -5,6 +5,9 @@
   font-family: 'Playfair Display', Serif;
   /* font-family: 'Josefin Sans', sans-serif; */
 }
+.row {
+  margin: 0;
+}
 h1 {
   width: fit-content;
   padding: 1vh;
