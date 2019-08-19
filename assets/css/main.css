@@ -50,10 +50,10 @@ hr {
   color: white;
   border: 4px solid white;
 }
-button.light:hover {
+/* button.light:hover {
   color: gray;
   background-color: white;
-}
+} */
 .dark {
   color: black;
   border: 4px solid black;

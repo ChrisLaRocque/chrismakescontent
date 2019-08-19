@@ -20,12 +20,33 @@ body {
 .slice {
   padding-top: 10vh;
   margin-top: -12vh;
+  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 90%);
 }
 p {
   font-family: 'Montserrat', sans-serif;
 }
 section {
   padding: 3vh;
+}
+hr {
+  width: 15%;
+}
+.btn-light {
+  color: white;
+  background-color: transparent;
+  /* border-color: white; */
+  border: 2px solid white;
+  border-radius: 12px;
+  width: 75%;
+}
+.webbtn:hover {
+  color: rgb(135,76,246);
+}
+.vidbtn:hover {
+  color: rgb(117,62,246);
+}
+.audbtn:hover {
+  color: rgb(97,47,246);
 }
 
 /* Nav */
@@ -68,7 +89,7 @@ a.navbar-brand {
 #web, #audio {
   background-color: white;
   color: black;
-  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 90%);
+  /* clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 90%); */
 }
 #web {
   padding: 8vh 3vh 19vh 3vh;
@@ -87,8 +108,8 @@ section#welcome {
 .headshot {
   clip-path: circle(50% at 50% 50%);
 }
-hr {
-  width: 15%;
+section#welcome > .container-fluid > .row > .col {
+  padding: 5vh;
 }
 
 /* Web */
@@ -98,6 +119,9 @@ hr {
   border: white;
   color: white;
   border-radius: 12px;
+}
+.card:hover {
+  cursor: pointer;
 }
 section#web {
   position: -webkit-sticky;
@@ -113,6 +137,26 @@ i.fas.fa-plus-circle {
   font-size: 3vh;
   vertical-align: bottom;
   float: right;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.card:hover > .card-body > i.fas.fa-plus-circle {
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg); 
+  -o-transform:rotate(90deg);
+}
+.card-overlay {
+  z-index: 1;
+  position: absolute;
+  top: 45%;
+  left: 42%;
 }
 
 /* Video */
@@ -125,14 +169,15 @@ section#video {
 .video-frame {
   background-image: url("/assets/img/covers/waves-cover.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .video-group > .card-deck > .card {
   background: transparent;
   border: 3px solid white;
 }
 .video-list {
-  overflow-y: scroll
+  overflow: scroll;
+  height: -webkit-fill-available;
 }
 
 /* Audio */
@@ -147,6 +192,9 @@ table {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .navbar {
+    width: 90.125%;
+}
   /* White Sections */
   #web, #audio {
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
