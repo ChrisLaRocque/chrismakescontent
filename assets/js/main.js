@@ -45,7 +45,7 @@ var songs = [
     document.getElementById('swap').setAttribute("href", "assets/css/" + path + ".css");
 
    // Loads all songs from the songs array
-   if (path == 'audio'){
+   if (path == 'audio' || path == 'test'){
    var songsList = function(songs) {
       for (var i = 0; i < songs.length; i++){
         var currentSong = songs[i];
@@ -73,6 +73,38 @@ var songs = [
 
 // // End of window.onload wrap
 };
+
+// Scroll animations
+$(window).scroll(function() {
+  var scrollTop = $(this).scrollTop();
+  console.log(scrollTop);
+
+  $('#welcome').css({
+    opacity: function() {
+      var elementHeight = $(this).height() + 112;
+      return (elementHeight - scrollTop) / elementHeight;
+    }
+  });
+  $('nav').css({
+    opacity: function() {
+      var elementHeight = $(this).height() + 660;
+      return (elementHeight - scrollTop) / elementHeight;
+    }
+  });
+
+    if (scrollTop > 660) {
+      $('nav').hide();
+    } else if (scrollTop <= 636) {
+      $('nav').show();
+    }
+
+    // if (scrollTop > 713) {
+    //   $('#web').addClass('fixed');
+    //   $('#welcome').toggle();
+    //   // $('#video').hide();
+    // } 
+
+});
   
 
  
