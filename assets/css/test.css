@@ -48,7 +48,12 @@ hr {
 .audbtn:hover {
   color: rgb(97,47,246);
 }
-
+.card {
+  border-radius: 12px;
+}
+.card:hover {
+  cursor: pointer;
+}
 /* Nav */
 nav {
   padding-top: 0;
@@ -113,15 +118,11 @@ section#welcome > .container-fluid > .row > .col {
 }
 
 /* Web */
-.card {
+.card-gradient {
   background: rgb(210,118,255);
   background: linear-gradient(135deg, rgba(210,118,255,1) 0%, rgba(81,0,255,1) 100%);
   border: white;
   color: white;
-  border-radius: 12px;
-}
-.card:hover {
-  cursor: pointer;
 }
 section#web {
   position: -webkit-sticky;
@@ -132,16 +133,17 @@ section#web {
   display: inline;
   vertical-align: bottom;
 }
-i.fas.fa-plus-circle {
+i.fas.fa-plus-circle, i.fas.fa-play-circle {
   align-self: right;
   font-size: 3vh;
   vertical-align: bottom;
   float: right;
+}
+i.fas.fa-plus-circle {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
-
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
@@ -171,14 +173,21 @@ section#video {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.video-group > .card-deck > .card {
+.card-white {
+  background: white;
+  border: white;
+  color: black;
+}
+.card-white > .card-body > h4, hr, i {
+  color: transparent;
+}
+/* .video-group > .card-deck > .card {
   background: transparent;
   border: 3px solid white;
-}
-.video-list {
-  overflow: scroll;
+} */
+/* .video-list {
   height: -webkit-fill-available;
-}
+}*/
 
 /* Audio */
 section#audio {
