@@ -34,15 +34,6 @@ section {
   margin: 7.75vh 1vh;
   scroll-snap-align: start;
 }
-section#welcome {
-  margin-top: 2vh;
-}
-section#web {
-  margin-bottom: 13vh;
-}
-section#video {
-  margin-bottom: 13vh;
-}
 h2 {
   width: fit-content;
   font-weight: 700;
@@ -50,6 +41,16 @@ h2 {
 hr {
   width: 15%;
 }
+
+/* Section Specific Styles */
+section#welcome {
+  margin-top: 2vh;
+}
+section#web, section#video {
+  margin-bottom: 13vh;
+}
+
+/* Class Overrides/Styles */
 .light {
   color: white;
   border: 2px solid white;
@@ -132,7 +133,7 @@ li.nav-item {
   border-radius: 6px;
   min-width: 100%;
   min-height: 100%;
-  clip-path: circle(3% at 95% 21%);
+  clip-path: circle(3% at 95% 20%);
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -141,7 +142,7 @@ li.nav-item {
   -moz-transition-property: -moz-clip-path;
   -o-transition-property: -o-clip-path;
   transition-property: clip-path, opacity;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-out;
 }
 .card-overlay h3 {
   color: rgb(210,118,255);
