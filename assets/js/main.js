@@ -79,12 +79,6 @@ $(window).scroll(function() {
   var scrollTop = $(this).scrollTop();
   console.log(scrollTop);
 
-  $('#welcome').css({
-    opacity: function() {
-      var elementHeight = $(this).height() + 112;
-      return (elementHeight - scrollTop) / elementHeight;
-    }
-  });
   $('nav').css({
     opacity: function() {
       var elementHeight = $(this).height() + 660;

@@ -24,6 +24,10 @@ section {
 section#welcome {
   margin-top: 2vh;
 }
+section#web {
+  margin-bottom: 13vh;
+  scroll-snap-align: center;
+}
 section#video {
   margin-bottom: 13vh;
 }
@@ -31,7 +35,6 @@ h2 {
   width: fit-content;
   font-weight: 700;
 }
-
 hr {
   width: 15%;
 }
@@ -117,7 +120,7 @@ li.nav-item {
   border-radius: 6px;
   min-width: 100%;
   min-height: 100%;
-  clip-path: circle(2% at 95.35% 19.35%);
+  clip-path: circle(3% at 95% 21%);
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -143,10 +146,12 @@ i.fas.fa-plus-circle, i.fas.fa-play-circle {
   clip-path: circle(50% at 50% 50%);
 }
 .webbtn:hover {
-  color: rgb(135,76,246);
+  color: rgb(150,88,247,1);
+  color: linear-gradient(135deg, rgba(150,88,247,1) 0%, rgba(148,87,247,1) 100%);
 }
 .vidbtn:hover {
-  color: rgb(117,62,246);
+  color: rgb(140,80,246,1);
+  color: linear-gradient(135deg, rgba(140,80,246,1) 0%, rgba(138,79,246,1) 100%);
 }
 
 /* Web */
@@ -170,6 +175,9 @@ i.fas.fa-plus-circle {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    scroll-padding-top: 9vh;
+  }
   .navbar {
     padding: 2vh;
   }
@@ -179,7 +187,7 @@ i.fas.fa-plus-circle {
   }
   section#welcome {
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 1vh;
   }
  .headshot {
    margin-bottom: 3vh;
