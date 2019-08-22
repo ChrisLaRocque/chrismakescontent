@@ -1,0 +1,134 @@
+KILL THE CSS!
+/* Global Overrides */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', Serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
+}
+.row {
+  margin: 0;
+}
+h1 {
+  width: fit-content;
+  padding: 1vh;
+}
+h1, h2 {
+  font-weight: 700;
+}
+section {
+  padding: 0 2vh;
+  margin: 2vh 0;
+}
+span {
+  font-family: inherit;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  font-family: 'Source Sans Pro', Sans-Serif;
+  padding: 1vh 0;
+  margin-bottom: 0;
+}
+button {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5vh;
+  padding: 1vh;
+}
+hr {
+  border: 2px solid white;
+}
+
+/* Light/Dark Classes */
+.light {
+  color: white;
+  border: 4px solid white;
+}
+/* button.light:hover {
+  color: gray;
+  background-color: white;
+} */
+.dark {
+  color: black;
+  border: 4px solid black;
+}
+button.dark:hover {
+  color: white;
+  background-color: black;
+}
+
+/* BS4 Class Overrides */
+.col-12 {
+  padding: 0;
+}
+
+/* What the hell is happening class */
+.wth {
+  border: 2px solid red;
+}
+
+/* Nav */
+nav {
+  font-weight: 700;
+  font-size: 2.75vh;
+  text-transform: uppercase;
+}
+.navbar-brand {
+  font-size: 3.25vh;
+}
+nav > a:hover {
+  color: inherit;
+  opacity: .5;
+}
+
+/* Main Section */
+.blurb {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.button-container > .row > .col-12 > a > button {
+  width: 75%;
+}
+
+/* Footer */
+.icon-bar-footer {
+  display: none;
+}
+
+/* Mobile/Desktop Classes */
+.mobile {
+  display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .blurb {
+    margin-top: 3vh;
+  }
+  .icon-bar {
+    display: none;
+  }
+  .icon-bar-footer {
+    display: block;
+    text-align: center;
+    font-size: 3vh;
+  }
+  .icon-bar-footer > a > i {
+    padding: 1vh;
+  }
+  .button-container > .row > .col-12 > a > button {
+    width: 100%;
+  }
+} 
