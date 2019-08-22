@@ -15,6 +15,7 @@ body {
 }
 p {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.9vh;
 }
 section {
   padding: 5vh;
@@ -26,7 +27,6 @@ section#welcome {
 }
 section#web {
   margin-bottom: 13vh;
-  scroll-snap-align: center;
 }
 section#video {
   margin-bottom: 13vh;
